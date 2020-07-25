@@ -1,5 +1,5 @@
-# 2020 Bootcamp Team 3 - `<team-name>`
-
+# 2020 Bootcamp Team 3 - `BeeTeam!`
+### *To Bee or not to Bee*
 ## Team Members
 
 | Role               | Name      |
