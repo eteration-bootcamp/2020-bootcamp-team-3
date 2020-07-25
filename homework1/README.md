@@ -1,14 +1,5 @@
-# 2020 Bootcamp Team 3 - `BeeTeam!`
-### *To Bee or not to Bee*
-## Team Members
+# HOMEWORK 1 - HTML & CSS
 
-| Role               | Name      |
-|--------------------|-----------|
-| Frontend Developer | John Doe  |
-| Backend Developer  | Jane Doe  |
+## General view of the page
 
-## Project
-
-.
-.
-.
+![img](screencapture-file-home-kadotus-Documents-projects-eteration-homeworks-homework-1-index-html-2020-07-25-23_01_33.png)
