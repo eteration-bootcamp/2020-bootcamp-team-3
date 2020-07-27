@@ -1,14 +1,16 @@
 # 2020 Bootcamp Team 3 - `BeeTeam!`
+
 ### *To Bee or not to Bee*
+
 ## Team Members
 
-| Role               | Name      |
-|--------------------|-----------|
-| Frontend Developer | John Doe  |
-| Backend Developer  | Jane Doe  |
+| Role                 | Name              |
+|----------------------|-------------------|
+| Full Stack Developer | Ali Topbaş        |
+| Full Stack Developer | Gizem Aktaş       |
+| Full Stack Developer | Umut Korkmaz      |
+| Full Stack Developer | Yiğithan Albulak  |
 
 ## Project
 
-.
-.
-.
+Accessory e-commerce website
