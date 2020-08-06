@@ -1,6 +1,6 @@
 # GoF Design Patterns Implementation
 
-##Singleton Implementation
+## Singleton Implementation
 
 <p>Singleton Implementation allows developers to instantiate only one class at a time.
 This allows us to have a global point of access to the instance provided.  If a class is already instantiated the Singleton class returns a reference to the already created instance.
@@ -22,7 +22,7 @@ public class Singleton {
 }
 ```
 
-##Factory Implementation
+## Factory Implementation
 In large scale projects instead of creating each instance with the new operator we want to assign a class 
 to create these objects for us. As the project scales if we were to hard code these classes managing and handling new features would become inconvenient. Hence using factory class
 in our situation we also want to share the same parameters across our classes which would help us with abstraction. Therefore we used an **abstract class** for our **factory class** and usage of the factory class allowed us to 
@@ -64,7 +64,7 @@ public class ComputerFactory {
 }
 ```
 
-##FlyWeight Pattern
+## FlyWeight Pattern
 
 Again in large scale projects instead of creating an object for each user we can pass the same object for all the users and store different data inside of this object. 
 We can identify these datas as **Intinsic Data** and **Extrinsic Data**. With this pattern we can create the same class 100 times and store it inside one initialized object.
@@ -85,7 +85,7 @@ public class ComputerClient {
     }
 }
 ```
-#Code Smells
+# Code Smells
 
 1. The first smell is the usage of factory for our case we only create 5 *ComputerClient* objects and this is low number of computers created on our part. While creating this number of objects we shouldn't use the factory pattern. 
 On the other hand in order to implement flyweight pattern, the factory pattern should be implemented.
