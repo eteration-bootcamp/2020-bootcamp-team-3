@@ -31,6 +31,10 @@ public class ProductService {
         return productDao.selectProductById(id);
     }
 
+    public Optional<Product> getProductByName(String name){
+        return productDao.selectProductByName(name);
+    }
+
     public int deleteProduct(String id){
         return productDao.deleteProductById(id);
     }

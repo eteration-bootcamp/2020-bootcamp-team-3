@@ -52,6 +52,19 @@ public class ProductDataAccessService implements ProductDao {
         }));
         return Optional.ofNullable(product);
     }
+    @Override
+    public Optional<Product> selectProductByName(String name){
+        final String sql = "SELECT id,name,description,price FROM product WHERE name=?";
+
+        Product product= jdbcTemplate.queryForObject(sql, new Object[]{name},((resultSet,i) -> {
+            String prodid = resultSet.getString("id");
+            String prodname = resultSet.getString("name");
+            String description = resultSet.getString("DESCRIPTION");
+            int price = resultSet.getInt("price");
+            return new Product(prodid,prodname,description,price);
+        }));
+        return Optional.ofNullable(product);
+    }
 
     @Override
     public int deleteProductById(String id) {

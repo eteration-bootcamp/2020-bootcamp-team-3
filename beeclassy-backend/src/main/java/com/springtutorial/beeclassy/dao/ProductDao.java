@@ -16,6 +16,8 @@ public interface ProductDao{
 
     Optional<Product> selectProductById(String id);
 
+    Optional<Product> selectProductByName(String name);
+
     int deleteProductById(String id);
     int updateProductById(String id, Product product);
     final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
