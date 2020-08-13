@@ -9,7 +9,7 @@ import java.util.UUID;
 public interface ProductDao{
     int insertProduct(String id, Product product);
     default int insertProduct(Product product){
-        String id = randomAlphaNumeric();
+        String id = UUID.randomUUID().toString();
         return insertProduct(id,product);
     }
     List<Product> selectAllProduct();
@@ -20,6 +20,10 @@ public interface ProductDao{
 
     int deleteProductById(String id);
     int updateProductById(String id, Product product);
+    List<Product> getProductsByPriceSortedAscending();
+    List<Product> getProductsByPriceSortedDescending();
+    List<Product> getProductsLargerThan(int threshold);
+    List<Product> getProductsLowerThan(int threshold);
     final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     public static String randomAlphaNumeric() {
         int count = 15;
