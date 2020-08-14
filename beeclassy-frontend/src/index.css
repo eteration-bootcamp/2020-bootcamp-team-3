@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.carouselStyle {
+  position: absolute;
+  width: 85%;
+  height: 30em;
+  left: 8.5em;
+  top: 16em;
+  text-align: center;
+  
+  
+}
+
+.carouselSlide{
+  max-height: 30em;
+  margin: auto;
+  text-align: center;
+  width: 95%;
+
+}
+
+.cardStyles{
+  position: absolute;
+  width: 86em;
+  left: 4em;
+  top: 48em;
+  
+  
+
+}

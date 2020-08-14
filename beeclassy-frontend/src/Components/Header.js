@@ -6,17 +6,17 @@ import shoppingCartIcon from '../Images/Icons/ShoppingCartIcon.png'
 
 
 export default function Header(props) {
-       
+    
         return (
             <div>
                <Button style={langStyleEng}>English</Button>
-               <Button style={langStyleTr}>Türkçe</Button>
+               <a href="/tr"><Button style={langStyleTr}>Türkçe</Button></a>
                <Button style={wishlistBtn}>Wishlist</Button>
                <Button style={signInBtn}>Sign In</Button> 
                <Button style={createanAccountBtn}>Create an Account</Button>
-               <img src={logo} alt="Logo" style={logoStyle} />
+               <a href="/"><img src={logo} alt="Logo" style={logoStyle} /></a>
                <img src={searchIcon} alt="Search Icon" style={searchIconStyle} />
-               <Input type="textarea" name="text" id="searchTextArea" placeholder="          Search for products" style={searchTextAreaStyle} />
+               <Input type="textarea" name="text" id="searchTextArea" placeholder="Search for products" style={searchTextAreaStyle} />
                <Button style={searchBtnStyle}>Search</Button>
                <Button style={shoppingCartBtnStyle}>Cart</Button>
                <img src={shoppingCartIcon} alt="Shopping Cart Icon" style={shoppingCartIconStyle} />
@@ -158,7 +158,8 @@ const searchTextAreaStyle = {
     top: '5.5em',
 
     background: 'linear-gradient(180deg, #FFE9C8 0%, rgba(255, 238, 214, 0) 100%)',
-    borderRadius: '50px'
+    borderRadius: '50px',
+    paddingLeft: '4em'
 }
 
 const searchBtnStyle = {
