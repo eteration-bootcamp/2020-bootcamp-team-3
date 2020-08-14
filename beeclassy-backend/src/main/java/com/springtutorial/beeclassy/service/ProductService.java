@@ -41,4 +41,18 @@ public class ProductService {
     public int updateProduct(String id, Product newproduct){
         return productDao.updateProductById(id,newproduct);
     }
+
+    public List<Product> getProductsByPriceSortedDescending(){
+        return productDao.getProductsByPriceSortedDescending();
+    }
+    public List<Product> getProductsByPriceSortedAscending(){
+        return productDao.getProductsByPriceSortedAscending();
+    }
+    public List<Product> getProductsLargerThan(int price){
+        return productDao.getProductsLargerThan(price);
+    }
+    public List<Product> getProductsLowerThan(int price){
+        return productDao.getProductsLowerThan(price);
+    }
+
 }
