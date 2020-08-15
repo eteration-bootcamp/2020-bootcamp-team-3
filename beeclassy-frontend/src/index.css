@@ -31,12 +31,15 @@ code {
 
 }
 
-.cardStyles{
+.cardGroupStyles{
   position: absolute;
   width: 86em;
-  left: 4em;
+  left: 6em;
   top: 48em;
-  
-  
+}
 
+.cardStyles{
+  position: absolute;
+  width: 21em;
+  
 }

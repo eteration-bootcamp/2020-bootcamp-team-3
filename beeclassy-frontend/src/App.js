@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./Components/Header"
 import Navbar from "./Components/NavBar"
 import Carousel from "./Components/CarouselPage"
-import ProductCarts from "./Components/ProductCarts"
+import ProductCards from "./Components/ProductCards"
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
     <Header />
     <Navbar />
     <Carousel />
-    <ProductCarts />
+    <ProductCards />
     </React.Fragment>
   );
 }
