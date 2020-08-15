@@ -33,7 +33,7 @@ code {
 
 .cardGroupStyles{
   position: absolute;
-  width: 86em;
+  width: 90%;
   left: 6em;
   top: 48em;
 }
@@ -42,4 +42,11 @@ code {
   position: absolute;
   width: 21em;
   
+}
+
+.footerStyle{
+  position: absolute;
+  top: 125em;
+  left: 6em;
+  width: 88%;
 }

@@ -81,15 +81,6 @@ const ProductCards = (props) => {
         button="Button"
       >
       </ProductCard>
-      <ProductCard 
-        imgUrl="https://statics.boyner.com.tr/contents/images/Landing/omuz-cantasi.jpg"
-        alt="Card image cap"
-        title="Card title"
-        subtitle="Card subtitle"
-        text="This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
-        button="Button"
-      >
-      </ProductCard>
     </CardGroup>
     
   );
