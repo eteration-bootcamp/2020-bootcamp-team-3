@@ -6,7 +6,9 @@ const productData = [
         title:"Card title",
         subtitle:"Card subtitle",
         text:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        button:"Button"
+        button:"Button",
+        gender:"female",
+        type: "bag"
     },
     {
         id:2,
@@ -15,7 +17,9 @@ const productData = [
         title:"Card title",
         subtitle:"Card subtitle",
         text:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        button:"Button"
+        button:"Button",
+        gender:"female",
+        type: "bag"
     },
     {
         id:3,
@@ -24,7 +28,9 @@ const productData = [
         title:"Card title",
         subtitle:"Card subtitle",
         text:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        button:"Button"
+        button:"Button",
+        gender:"female",
+        type: "bag"
     },
     {
         id:4,
@@ -33,7 +39,9 @@ const productData = [
         title:"Card title",
         subtitle:"Card subtitle",
         text:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        button:"Button"
+        button:"Button",
+        gender:"female",
+        type: "bag"
     },
     {
         id:5,
@@ -42,7 +50,9 @@ const productData = [
         title:"Card title",
         subtitle:"Card subtitle",
         text:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        button:"Button"
+        button:"Button",
+        gender:"female",
+        type: "bag"
     },
     {
         id:6,
@@ -51,7 +61,9 @@ const productData = [
         title:"Card title",
         subtitle:"Card subtitle",
         text:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        button:"Button"
+        button:"Button",
+        gender:"female",
+        type: "bag"
     },
     {
         id:7,
@@ -60,7 +72,9 @@ const productData = [
         title:"Card title",
         subtitle:"Card subtitle",
         text:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        button:"Button"
+        button:"Button",
+        gender:"female",
+        type: "bag"
     },
     {
         id:8,
@@ -69,7 +83,9 @@ const productData = [
         title:"Card title",
         subtitle:"Card subtitle",
         text:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        button:"Button"
+        button:"Button",
+        gender:"female",
+        type: "bag"
     },
 ]
 
