@@ -35,7 +35,6 @@ public class ProductController {
         }
 
     }
-
     @GetMapping
     public ResponseEntity<?> getAllProduct() {
         try {
