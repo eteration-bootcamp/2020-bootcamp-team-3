@@ -1,7 +1,5 @@
 import React from 'react'
-import {
-    Card, Button, CardImg, CardTitle, CardBody
-  } from 'reactstrap';
+import {Card, Button, CardImg, CardTitle, CardBody} from 'reactstrap';
 
 export default function ProductCard(props) {
     return (
