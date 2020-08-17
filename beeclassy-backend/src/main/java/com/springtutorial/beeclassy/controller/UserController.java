@@ -1,27 +1,63 @@
 package com.springtutorial.beeclassy.controller;
 
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import com.springtutorial.beeclassy.model.User;
+import com.springtutorial.beeclassy.service.SecurityService;
+import com.springtutorial.beeclassy.service.UserService;
+import com.springtutorial.beeclassy.service.UserValidator;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/api/v1/user")
-@RestController
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+
+@Controller
 public class UserController {
+    @Autowired
+    private UserService userService;
 
-    @GetMapping("admin")
-    public String getAdmin(){
-        return "<h2>Hello Admin</h2>";
+    @Autowired
+    private SecurityService securityService;
+
+    @Autowired
+    private UserValidator userValidator;
+
+    @GetMapping("/registration")
+    public String registration(Model model) {
+        model.addAttribute("userForm", new User());
+
+        return "registration";
     }
-    @GetMapping("user")
-    public String getUser(){
-        return "<h2>Hello User</h2>";
+
+    @PostMapping("/registration")
+    public String registration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult) {
+        userValidator.validate(userForm, bindingResult);
+
+        if (bindingResult.hasErrors()) {
+            return "registration";
+        }
+
+        userService.save(userForm);
+
+        securityService.autoLogin(userForm.getUsername(), userForm.getPasswordConfirm());
+
+        return "redirect:/welcome";
     }
 
+    @GetMapping("/login")
+    public String login(Model model, String error, String logout) {
+        if (error != null)
+            model.addAttribute("error", "Your username and password is invalid.");
 
+        if (logout != null)
+            model.addAttribute("message", "You have been logged out successfully.");
 
+        return "login";
+    }
 
-
+    @GetMapping({"/", "/welcome"})
+    public String welcome(Model model) {
+        return "welcome";
+    }
 }
