@@ -4,13 +4,11 @@ import { Collapse,
     NavbarToggler,
     NavbarBrand,
     Nav,
-    NavItem,
-    NavLink,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem,
-    NavbarText } from 'reactstrap';
+    DropdownItem
+    } from 'reactstrap';
 
 export default function NavBar(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,10 +27,16 @@ export default function NavBar(props) {
                     </DropdownToggle>
                     <DropdownMenu left>
                         <DropdownItem>
-                        Earrings
+                        Glasses
                         </DropdownItem>
                         <DropdownItem>
                         Hat
+                        </DropdownItem>
+                        <DropdownItem>
+                        Necklace
+                        </DropdownItem>
+                        <DropdownItem>
+                        Watch
                         </DropdownItem>
                         <DropdownItem divider />
                         <DropdownItem>
@@ -45,11 +49,17 @@ export default function NavBar(props) {
                         Male
                     </DropdownToggle>
                     <DropdownMenu left>
+                    <DropdownItem>
+                        Glasses
+                        </DropdownItem>
                         <DropdownItem>
-                        Watch
+                        Hat
                         </DropdownItem>
                         <DropdownItem>
                         Tie
+                        </DropdownItem>
+                        <DropdownItem>
+                        Watch
                         </DropdownItem>
                         <DropdownItem divider />
                         <DropdownItem>

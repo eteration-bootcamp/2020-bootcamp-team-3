@@ -22,8 +22,8 @@ const aboutUs = {
     position: 'absolute',
     width: '90px',
     height: '30px',
-    left: '3em',
-    top: '172em',
+    left: '5em',
+    top: '171em',
     outline: 'none',
     borderStyle:'none',
     border: 'none',
@@ -41,8 +41,8 @@ const contactUs = {
     position: 'absolute',
     width: '95px',
     height: '30px',
-    left: '9em',
-    top: '172em',
+    left: '11.5em',
+    top: '171em',
     outline: 'none',
     borderStyle:'none',
     border: 'none',
@@ -63,7 +63,7 @@ const facebookStyle={
     width: '30px',
     height: '30px',
     right: '11em',
-    top: '161em',
+    top: '160em',
 }
 
 const instagramStyle ={
@@ -71,7 +71,7 @@ const instagramStyle ={
     width: '30px',
     height: '30px',
     right: '8em',
-    top: '161em',
+    top: '160em',
 }
 
 const twitterStyle = {
@@ -79,5 +79,5 @@ const twitterStyle = {
     width: '30px',
     height: '30px',
     right: '5em',
-    top: '161em',
+    top: '160em',
 }

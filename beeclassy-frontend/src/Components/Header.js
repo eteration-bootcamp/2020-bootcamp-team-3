@@ -12,7 +12,7 @@ export default function Header(props) {
                <Button style={langStyleEng}>English</Button>
                <a href="/tr"><Button style={langStyleTr}>Türkçe</Button></a>
                <Button style={wishlistBtn}>Wishlist</Button>
-               <Button style={signInBtn}>Sign In</Button> 
+               <a href="/SignIn"><Button style={signInBtn}>Sign In</Button></a>
                <Button style={createanAccountBtn}>Create an Account</Button>
                <a href="/"><img src={logo} alt="Logo" style={logoStyle} /></a>
                <img src={searchIcon} alt="Search Icon" style={searchIconStyle} />
