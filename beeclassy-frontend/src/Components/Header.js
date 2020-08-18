@@ -12,8 +12,8 @@ export default function Header(props) {
                <Button style={langStyleEng}>English</Button>
                <a href="/tr"><Button style={langStyleTr}>Türkçe</Button></a>
                <Button style={wishlistBtn}>Wishlist</Button>
-               <a href="/SignIn"><Button style={signInBtn}>Sign In</Button></a>
-               <Button style={createanAccountBtn}>Create an Account</Button>
+               <a href="/login"><Button style={signInBtn}>Sign In</Button></a>
+               <a href="/register"><Button style={createanAccountBtn}>Create an Account</Button></a>
                <a href="/"><img src={logo} alt="Logo" style={logoStyle} /></a>
                <img src={searchIcon} alt="Search Icon" style={searchIconStyle} />
                <Input type="textarea" name="text" id="searchTextArea" placeholder="Search for products" style={searchTextAreaStyle} />
