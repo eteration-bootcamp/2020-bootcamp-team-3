@@ -41,6 +41,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web)
             throws Exception {
         web.ignoring().antMatchers(HttpMethod.POST, "/api/v1/product");
+        web.ignoring().antMatchers(HttpMethod.POST, "/add-to-wishlist");
+        web.ignoring().antMatchers(HttpMethod.POST, "/delete-from-wishlist");
+        web.ignoring().antMatchers(HttpMethod.GET, "/delete-from-wishlist");
+        web.ignoring().antMatchers(HttpMethod.GET, "/add-to-wishlist");
         web.ignoring().antMatchers(HttpMethod.OPTIONS);
 
     }
@@ -66,6 +70,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/test/**").permitAll()
                 .antMatchers("/api/v1/product").permitAll()
                 .antMatchers("/api/v1/product/**").permitAll()
+                .antMatchers("add-to-wishlist").permitAll()
+                .antMatchers("delete-from-wishlist").permitAll()
                 .anyRequest().authenticated();
 
         http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
