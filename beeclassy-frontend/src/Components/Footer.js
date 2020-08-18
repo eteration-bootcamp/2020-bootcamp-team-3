@@ -9,7 +9,6 @@ export default function Footer() {
     return (
         <div >
             <a href="/AboutUs"><Button style={aboutUs}>About Us</Button></a>
-            <Button style={contactUs}>Contact Us</Button>
             <a href="/"><img src={facebookLogo} alt="facebookLogo" style={facebookStyle} /></a>
             <a href="/"><img src={instagramLogo} alt="instagramLogo" style={instagramStyle} /></a>
             <a href="/"><img src={twitterLogo} alt="instagramLogo" style={twitterStyle} /></a>
@@ -23,7 +22,7 @@ const aboutUs = {
     width: '90px',
     height: '30px',
     left: '5em',
-    top: '171em',
+    top: '179em',
     outline: 'none',
     borderStyle:'none',
     border: 'none',
@@ -35,27 +34,6 @@ const aboutUs = {
     lineHeight: '23px',
     
     color: 'rgba(65, 33, 10, 0.7)'
-}
-
-const contactUs = {
-    position: 'absolute',
-    width: '95px',
-    height: '30px',
-    left: '11.5em',
-    top: '171em',
-    outline: 'none',
-    borderStyle:'none',
-    border: 'none',
-    outline: 'none',
-    backgroundColor: '#fff',
-    
-    fontFamily: 'Roboto',
-
-    fontSize: '15px',
-    lineHeight: '23px',
-    
-    color: 'rgba(65, 33, 10, 0.7)'
-
 }
 
 const facebookStyle={
@@ -63,7 +41,7 @@ const facebookStyle={
     width: '30px',
     height: '30px',
     right: '11em',
-    top: '160em',
+    top: '168em',
 }
 
 const instagramStyle ={
@@ -71,7 +49,7 @@ const instagramStyle ={
     width: '30px',
     height: '30px',
     right: '8em',
-    top: '160em',
+    top: '168em',
 }
 
 const twitterStyle = {
@@ -79,5 +57,5 @@ const twitterStyle = {
     width: '30px',
     height: '30px',
     right: '5em',
-    top: '160em',
+    top: '168em',
 }
