@@ -25,7 +25,8 @@ const buttonStyle = {
 
     marginTop:"20px",
     backgroundColor:"rgba(65, 33, 10, 0.7)",
-    color:"white"
+    color:"white",
+    fontSize:"14px"
 }
 
 const titleStyle1 = {
