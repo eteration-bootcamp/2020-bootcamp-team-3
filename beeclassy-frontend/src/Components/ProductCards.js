@@ -28,7 +28,8 @@ const ProductCards = (props) => {
     currency="₺"
     title={product.name}
     cartButton="Add to Cart"
-    wishButton="Add to Wishlist" />)
+    wishButton="Add to Wishlist"
+    />)
 
   return (
     <CardGroup className="cardGroupStyles">

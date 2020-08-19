@@ -5,11 +5,15 @@ import App from "./App";
 import Routes from "./Routes"
 import * as serviceWorker from "./serviceWorker";
 import 'bootstrap/dist/css/bootstrap.css';
+import { Provider } from 'react-redux';
+import store from './store';
+import {createStore} from 'redux';
+import cartReducer from "./Components/cartReducer";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <Routes/>
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById("root")
 );
 

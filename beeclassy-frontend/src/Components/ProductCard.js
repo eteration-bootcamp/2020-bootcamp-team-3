@@ -1,9 +1,31 @@
-import React from 'react'
+import React , { useEffect, useState } from 'react'
 import {
     Card, Button, CardImg, CardTitle, CardBody
 } from 'reactstrap';
+import { Link, useHistory } from 'react-router-dom';
+import {useSelector, useDispatch} from 'react-redux';
+import { detailsProduct } from './productActions';
+
 
 export default function ProductCard(props) {
+   
+  
+   const productDetails= useSelector(state =>state.productDetails);
+   const {product, loading, error} = productDetails;
+   const dispatch = useDispatch();
+  
+   useEffect(() => {
+       dispatch(detailsProduct(props.key));
+        return() => {
+            //
+        };
+   
+    }, []);
+  
+    let  history  = useHistory();
+    const handleAddtoCart= () =>{
+        history.push("/cart/"+props.key)
+    }
     return (
         <div>
             <Card className="cardStyles">
@@ -12,7 +34,7 @@ export default function ProductCard(props) {
                         <CardTitle style={titleStyle1}>{props.title}</CardTitle>
                         <CardTitle style={titleStyle2}>{props.price + props.currency}</CardTitle>
                         
-                        <Button style={buttonStyle}>{props.cartButton}</Button>
+                        <Button onClick={handleAddtoCart} style={buttonStyle}>{props.cartButton}</Button>
                         <div className ="divider"/>
                         <Button style={buttonStyle}>{props.wishButton}</Button>
                     </CardBody>
@@ -20,6 +42,7 @@ export default function ProductCard(props) {
         </div>
     )
 }
+
 
 const buttonStyle = {
 

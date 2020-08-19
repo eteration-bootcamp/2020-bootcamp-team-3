@@ -18,7 +18,7 @@ export default function Header(props) {
                <img src={searchIcon} alt="Search Icon" style={searchIconStyle} />
                <Input type="textarea" name="text" id="searchTextArea" placeholder="Search for products" style={searchTextAreaStyle} />
                <Button style={searchBtnStyle}>Search</Button>
-               <Button style={shoppingCartBtnStyle}>Cart</Button>
+               <a href="/cart"><Button style={shoppingCartBtnStyle}>Cart</Button></a>
                <img src={shoppingCartIcon} alt="Shopping Cart Icon" style={shoppingCartIconStyle} />
 
             </div>
