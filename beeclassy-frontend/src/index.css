@@ -55,3 +55,9 @@ code {
   display:inline-block;
 }
 
+.aboutStyle{
+  position: absolute;
+  top: 1em;
+  left: 6em;
+  width: 88%;
+}

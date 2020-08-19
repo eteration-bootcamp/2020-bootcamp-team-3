@@ -5,6 +5,7 @@ import {
 import { Link, useHistory } from 'react-router-dom';
 import {useSelector, useDispatch} from 'react-redux';
 import { detailsProduct } from './productActions';
+import { addToCart } from './CartActions';
 
 
 export default function ProductCard(props) {
@@ -24,7 +25,8 @@ export default function ProductCard(props) {
   
     let  history  = useHistory();
     const handleAddtoCart= () =>{
-        history.push("/cart/"+props.key)
+        dispatch(addToCart(props.prodid));
+        history.push("/cart/"+props.prodid)
     }
     return (
         <div>

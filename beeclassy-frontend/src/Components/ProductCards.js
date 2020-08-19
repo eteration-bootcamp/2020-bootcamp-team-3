@@ -22,7 +22,8 @@ const ProductCards = (props) => {
 
 
   const productComponents = responseData && responseData.map(product => <ProductCard 
-    key={product.id}
+   // key={product.id}
+    prodid={product.id}
     imgUrl={product.imgUrl}
     price={product.price}
     currency="₺"

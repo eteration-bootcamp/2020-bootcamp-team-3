@@ -4,7 +4,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jdk.jfr.Name;
 import org.springframework.lang.NonNull;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.UUID;
 @Entity
 @Table(name = "product")
@@ -17,9 +20,6 @@ public class Product {
     private String imgUrl;
     private String gender;
     private String type;
-    @ManyToOne
-    @JoinColumn(name="product_id", nullable=false)
-    private Wishlist wishlist;
 
     public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
