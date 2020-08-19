@@ -37,7 +37,7 @@ function CartScreen(props) {
           </div>
             :
             cartItems.map(item =>
-              <li>
+              <li >
                 <div className="cart-image">
                   <img src={item.image} alt="product" />
                 </div>
@@ -64,7 +64,11 @@ function CartScreen(props) {
 
     </div>
     <div className="cart-action">
-    
+      <h3>
+        Total 
+        :
+        ₺ {cartItems.reduce((a, c) => a + c.price, 0)}
+      </h3>
       <button className="button primary full-width" disabled={cartItems.length === 0}>
         Proceed to Checkout
       </button>
