@@ -26,7 +26,7 @@ export default function ProductCard(props) {
     let  history  = useHistory();
     const handleAddtoCart= () =>{
         dispatch(addToCart(props.prodid));
-        history.push("/cart/"+props.prodid)
+        
     }
     return (
         <div>
